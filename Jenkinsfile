@@ -10,6 +10,7 @@ pipeline {
     // any of the available nodes.
     agent any
 
+
     stages {
 
 //         stage('Git Pull') {

@@ -7,7 +7,7 @@
     - name: Pull Docker Image
       docker_image:
         name: pandey16/calculator-using-devops
-        tag: latest
+        tag: pandey16/calculator-using-devopslatest
         source: pull
 
     - name: Create & Start Calculator Docker Container
