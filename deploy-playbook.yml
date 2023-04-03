@@ -7,13 +7,13 @@
     - name: Pull Docker Image
       docker_image:
         name: pandey16/calculator-using-devops
-        tag: pandey16/calculator-using-devopslatest
+        tag: latest
         source: pull
 
     - name: Create & Start Calculator Docker Container
       docker_container:
-        name: calculator-using-devops
-        image: pandey16/calculator-using-devops
+        name: calculator-using-devops-cont
+        image: pandey16/calculator-using-devops:latest
         state: started
         tty: yes
         interactive: yes
