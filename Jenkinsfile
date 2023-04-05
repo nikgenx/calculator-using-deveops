@@ -13,14 +13,14 @@ pipeline {
 
     stages {
 
-//         stage('Git Pull') {
-//             steps {
-//                 // credentials are required because its a private repository
-//                 git url: 'https://github.com/james-jasvin/Calculator-Using-DevOps.git',
-//                 branch: 'master',
-//                 credentialsId: 'github-pat'
-//             }
-//         }
+        stage('Git Pull') {
+            steps {
+                // credentials are required because its a private repository
+                git url: 'https://github.com/nikgenx/calculator-using-deveops.git',
+                branch: 'main',
+                credentialsId: 'github-pat'
+            }
+        }
 
         stage('Maven Build + JUnit Tests') {
             steps {
